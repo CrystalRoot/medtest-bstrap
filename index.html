@@ -8,6 +8,7 @@
 
 <!--Bootstrap CSS-->
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/styles.css" />
 
 <title>Is My New Medication Working?</title>
 </head>
@@ -17,8 +18,8 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1>NuCamp</h1>
-                    <h2>a better way to camp</h2>
+                    <h1>New Med Tracking</h1>
+                    <h2>Is my new medication working?</h2>
                 </div>
             </div>
         </div>
@@ -35,14 +36,203 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-4 col-md-3">
-                <h2>Discover & Review</h2>
+            <form class="col">
+                <h5>Baseline</h5>
+                <p>What are your baseline stats before beginning this medication?<br/>
+                1 (low) to 5 (high)</p>
+            </form>
+        </div>
+        <div class="row"> <!--First Baseline Questionnaire Button Group (Mood)-->
+            <div class="col-3">
+                <p>Mood:</p>
             </div>
             <div class="col">
-                <h3>Our Campsites</h3>
-                <p>Explore our growing database of curated campsites and leave your own reviews!</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="mood" type="radio" id="baselineMood1" value="option1">
+                    <label class="form-check-label" for="baselineMood1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="mood" type="radio" id="baselineMood2" value="option2">
+                    <label class="form-check-label" for="baselineMood2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="mood" type="radio" id="baselineMood3" value="option3">
+                    <label class="form-check-label" for="baselineMood3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="mood" type="radio" id="baselineMood4" value="option4">
+                    <label class="form-check-label" for="baselineMood4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="mood" type="radio" id="baselineMood5" value="option5">
+                    <label class="form-check-label" for="baselineMood5">5</label>
+                </div>
             </div>
         </div>
+        <div class="row"> <!--Second Baseline Questionnaire Button Group (Irritability)-->
+            <div class="col-3">
+                <p>Irritability:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="irritability" type="radio" id="baselineIrritability1" value="option1">
+                    <label class="form-check-label" for="baselineIrritability1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="irritability" type="radio" id="baselineIrritability2" value="option2">
+                    <label class="form-check-label" for="baselineIrritability2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="irritability" type="radio" id="baselineIrritability3" value="option3">
+                    <label class="form-check-label" for="baselineIrritability3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="irritability" type="radio" id="baselineIrritability4" value="option4">
+                    <label class="form-check-label" for="baselineIrritability4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="irritability" type="radio" id="baselineIrritability5" value="option5">
+                    <label class="form-check-label" for="baselineIrritability5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Third Baseline Questionnaire Button Group (Focus)-->
+            <div class="col-3">
+                <p>Focus:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="focus" type="radio" id="baselineFocus1" value="option1">
+                    <label class="form-check-label" for="baselineFocus1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="focus" type="radio" id="baselineFocus2" value="option2">
+                    <label class="form-check-label" for="baselineFocus2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="focus" type="radio" id="baselineFocus3" value="option3">
+                    <label class="form-check-label" for="baselineFocus3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="focus" type="radio" id="baselineFocus4" value="option4">
+                    <label class="form-check-label" for="baselineFocus4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="focus" type="radio" id="baselineFocus5" value="option5">
+                    <label class="form-check-label" for="baselineFocus5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Fourth Baseline Questionnaire Button Group (Memory)-->
+            <div class="col-3">
+                <p>Memory:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="memory" type="radio" id="baselineMemory1" value="option1">
+                    <label class="form-check-label" for="baselineMemory1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="memory" type="radio" id="baselineMemory2" value="option2">
+                    <label class="form-check-label" for="baselineMemory2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="memory" type="radio" id="baselineMemory3" value="option3">
+                    <label class="form-check-label" for="baselineMemory3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="memory" type="radio" id="baselineMemory4" value="option4">
+                    <label class="form-check-label" for="baselineMemory4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="memory" type="radio" id="baselineMemory5" value="option5">
+                    <label class="form-check-label" for="baselineMemory5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Fifth Baseline Questionnaire Button Group (Energy)-->
+            <div class="col-3">
+                <p>Energy:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="energy" type="radio" id="baselineEnergy1" value="option1">
+                    <label class="form-check-label" for="baselineEnergy1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="energy" type="radio" id="baselineEnergy2" value="option2">
+                    <label class="form-check-label" for="baselineEnergy2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="energy" type="radio" id="baselineEnergy3" value="option3">
+                    <label class="form-check-label" for="baselineEnergy3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="energy" type="radio" id="baselineEnergy4" value="option4">
+                    <label class="form-check-label" for="baselineEnergy4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="energy" type="radio" id="baselineEnergy5" value="option5">
+                    <label class="form-check-label" for="baselineEnergy5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Sixth Baseline Questionnaire Button Group (Task Completion)-->
+            <div class="col-3">
+                <p>Ability to Complete Tasks:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="tasks" type="radio" id="baselineTasks1" value="option1">
+                    <label class="form-check-label" for="baselineTasks1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="tasks" type="radio" id="baselineTasks2" value="option2">
+                    <label class="form-check-label" for="baselineTasks2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="tasks" type="radio" id="baselineTasks3" value="option3">
+                    <label class="form-check-label" for="baselineTasks3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="tasks" type="radio" id="baselineTasks4" value="option4">
+                    <label class="form-check-label" for="baselineTasks4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="tasks" type="radio" id="baselineTasks5" value="option5">
+                    <label class="form-check-label" for="baselineTasks5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Seventh Baseline Questionnaire Button Group (Motivation)-->
+            <div class="col-3">
+                <p>Motivation:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="motivation" type="radio" id="baselineMotivation1" value="option1">
+                    <label class="form-check-label" for="baselineTasks1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="motivation" type="radio" id="baselineMotivation2" value="option2">
+                    <label class="form-check-label" for="baselineTasks2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="motivation" type="radio" id="baselineMotivation3" value="option3">
+                    <label class="form-check-label" for="baselineTasks3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="motivation" type="radio" id="baselineMotivation4" value="option4">
+                    <label class="form-check-label" for="baselineTasks4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="motivation" type="radio" id="baselineMotivation5" value="option5">
+                    <label class="form-check-label" for="baselineTasks5">5</label>
+                </div>
+            </div>
+        </div>
+    </div> <!--Closing Container for Baseline Questions-->
+
 
         <div class="row">
             <div class="col-sm-4 col-md-3">
@@ -91,8 +281,16 @@
            </div>
         </div>
     </footer>
+    <script>
+        $(document).ready(function(){
+            $('input:checkbox').click(function() {
+            $('input:checkbox').not(this).prop('checked', false);
+            });
+        });
+    </script>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
