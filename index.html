@@ -231,7 +231,523 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
     </div> <!--Closing Container for Baseline Questions-->
+
+    <hr />
+
+    <div class="container"> <!--Opening Container for Efficacy Questions-->
+        <div class="row">
+            <div class="col">
+                <h5>Effectiveness</h5>
+                <p>What changes do you notice with this medication from day to day?<br/>
+                1 (low) to 5 (high)</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-inline"> <!-- Date input -->
+                    <div class="form-group">
+                        <label class="control-label" for="date">Date:  </label>
+                        <input class="form-control" id="date" name="date" placeholder="MM/DD/YY" type="text"/>
+                    </div>
+                </div>
+                <div class="form form-inline"> <!-- Time input -->
+                    <div class="form-group">
+                        <label class="control-label" for="time1">Time of First Dose:</label>
+                        <input class="form-control" for="time1" name="time1" placeholder="12:00" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="time2">Time of Second Dose:</label>
+                        <input class="form-control" for="time2" name="time2" placeholder="12:00" />
+                    </div>
+                </div>
+                <div class="form form-inline"> <!-- Second Time input -->
+                    <div class="form-group">
+                        <label class="control-label" for="time3">Time First Dose Wore Off:</label>
+                        <input class="form-control" for="time3" name="time3" placeholder="12:00" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="time4">Time Second Dose Wore Off:</label>
+                        <input class="form-control" for="time4" name="time4" placeholder="12:00" />
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="row"> <!--First Efficacy Questionnaire Button Group (Mood)-->
+            <div class="col-3">
+                <p>Mood:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="mood" type="radio" id="efficacyMood1" value="option1">
+                    <label class="form-check-label" for="efficacyMood1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="mood" type="radio" id="efficacyMood2" value="option2">
+                    <label class="form-check-label" for="efficacyMood2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="mood" type="radio" id="efficacyMood3" value="option3">
+                    <label class="form-check-label" for="efficacyMood3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="mood" type="radio" id="efficacyMood4" value="option4">
+                    <label class="form-check-label" for="efficacyMood4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="mood" type="radio" id="efficacyMood5" value="option5">
+                    <label class="form-check-label" for="efficacyMood5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Second Efficacy Questionnaire Button Group (Irritability)-->
+            <div class="col-3">
+                <p>Irritability:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="irritability" type="radio" id="efficacyIrritability1" value="option1">
+                    <label class="form-check-label" for="efficacyIrritability1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="irritability" type="radio" id="efficacyIrritability2" value="option2">
+                    <label class="form-check-label" for="efficacyIrritability2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="irritability" type="radio" id="efficacyIrritability3" value="option3">
+                    <label class="form-check-label" for="efficacyIrritability3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="irritability" type="radio" id="efficacyIrritability4" value="option4">
+                    <label class="form-check-label" for="efficacyIrritability4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="irritability" type="radio" id="efficacyIrritability5" value="option5">
+                    <label class="form-check-label" for="efficacyIrritability5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Third Efficacy Questionnaire Button Group (Focus)-->
+            <div class="col-3">
+                <p>Focus:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="focus" type="radio" id="efficacyFocus1" value="option1">
+                    <label class="form-check-label" for="efficacyFocus1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="focus" type="radio" id="efficacyFocus2" value="option2">
+                    <label class="form-check-label" for="efficacyFocus2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="focus" type="radio" id="efficacyFocus3" value="option3">
+                    <label class="form-check-label" for="efficacyFocus3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="focus" type="radio" id="efficacyFocus4" value="option4">
+                    <label class="form-check-label" for="efficacyFocus4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="focus" type="radio" id="efficacyFocus5" value="option5">
+                    <label class="form-check-label" for="efficacyFocus5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Fourth Efficacy Questionnaire Button Group (Memory)-->
+            <div class="col-3">
+                <p>Memory:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="memory" type="radio" id="efficacyMemory1" value="option1">
+                    <label class="form-check-label" for="efficacyMemory1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="memory" type="radio" id="efficacyMemory2" value="option2">
+                    <label class="form-check-label" for="efficacyMemory2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="memory" type="radio" id="efficacyMemory3" value="option3">
+                    <label class="form-check-label" for="efficacyMemory3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="memory" type="radio" id="efficacyMemory4" value="option4">
+                    <label class="form-check-label" for="efficacyMemory4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="memory" type="radio" id="efficacyMemory5" value="option5">
+                    <label class="form-check-label" for="efficacyMemory5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Fifth Efficacy Questionnaire Button Group (Energy)-->
+            <div class="col-3">
+                <p>Energy:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="energy" type="radio" id="efficacyEnergy1" value="option1">
+                    <label class="form-check-label" for="efficacyEnergy1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="energy" type="radio" id="efficacyEnergy2" value="option2">
+                    <label class="form-check-label" for="efficacyEnergy2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="energy" type="radio" id="efficacyEnergy3" value="option3">
+                    <label class="form-check-label" for="efficacyEnergy3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="energy" type="radio" id="efficacyEnergy4" value="option4">
+                    <label class="form-check-label" for="efficacyEnergy4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="energy" type="radio" id="efficacyEnergy5" value="option5">
+                    <label class="form-check-label" for="efficacyEnergy5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Sixth Efficacy Questionnaire Button Group (Task Completion)-->
+            <div class="col-3">
+                <p>Ability to Complete Tasks:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="tasks" type="radio" id="efficacyTasks1" value="option1">
+                    <label class="form-check-label" for="efficacyTasks1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="tasks" type="radio" id="efficacyTasks2" value="option2">
+                    <label class="form-check-label" for="efficacyTasks2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="tasks" type="radio" id="efficacyTasks3" value="option3">
+                    <label class="form-check-label" for="efficacyTasks3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="tasks" type="radio" id="efficacyTasks4" value="option4">
+                    <label class="form-check-label" for="efficacyTasks4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="tasks" type="radio" id="efficacyTasks5" value="option5">
+                    <label class="form-check-label" for="efficacyTasks5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Seventh Efficacy Questionnaire Button Group (Motivation)-->
+            <div class="col-3">
+                <p>Motivation:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="motivation" type="radio" id="efficacyMotivation1" value="option1">
+                    <label class="form-check-label" for="efficacyTasks1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="motivation" type="radio" id="efficacyMotivation2" value="option2">
+                    <label class="form-check-label" for="efficacyTasks2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="motivation" type="radio" id="efficacyMotivation3" value="option3">
+                    <label class="form-check-label" for="efficacyTasks3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="motivation" type="radio" id="efficacyMotivation4" value="option4">
+                    <label class="form-check-label" for="efficacyTasks4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="motivation" type="radio" id="efficacyMotivation5" value="option5">
+                    <label class="form-check-label" for="efficacyTasks5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div> <!--Closing Container for Efficacy Questions-->
+
+    <div class="container"> <!--Opening Container for Side Effect Questions-->
+        <div class="row">
+            <div class="col">
+                <h5>Side Effects</h5>
+                <p>What side effects have you noticed from this medication?<br/>
+                1 (low) to 5 (high)</p>
+            </div>
+        </div>
+        <div class="row"> <!--First Side Effect Questionnaire Button Group (Appetite)-->
+            <div class="col-3">
+                <p>Appetite:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="appetite" type="radio" id="sideEffectAppetite1" value="option1">
+                    <label class="form-check-label" for="sideEffectAppetite1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="appetite" type="radio" id="sideEffectAppetite2" value="option2">
+                    <label class="form-check-label" for="sideEffectAppetite2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="appetite" type="radio" id="sideEffectAppetite3" value="option3">
+                    <label class="form-check-label" for="sideEffectAppetite3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="appetite" type="radio" id="sideEffectAppetite4" value="option4">
+                    <label class="form-check-label" for="sideEffectAppetite4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="appetite" type="radio" id="sideEffectAppetite5" value="option5">
+                    <label class="form-check-label" for="sideEffectAppetite5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Second Side Effect Questionnaire Button Group (Dry Mouth)-->
+            <div class="col-3">
+                <p>Dry Mouth:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="dryMouth" type="radio" id="sideEffectDryMouth1" value="option1">
+                    <label class="form-check-label" for="sideEffectDryMouth1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="dryMouth" type="radio" id="sideEffectDryMouth2" value="option2">
+                    <label class="form-check-label" for="sideEffectDryMouth2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="dryMouth" type="radio" id="sideEffectDryMouth3" value="option3">
+                    <label class="form-check-label" for="sideEffectDryMouth3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="dryMouth" type="radio" id="sideEffectDryMouth4" value="option4">
+                    <label class="form-check-label" for="sideEffectDryMouth4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="dryMouth" type="radio" id="sideEffectDryMouth5" value="option5">
+                    <label class="form-check-label" for="sideEffectDryMouth5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Third Side Effect Questionnaire Button Group (Nausea)-->
+            <div class="col-3">
+                <p>Nausea:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="nausea" type="radio" id="sideEffectNausea1" value="option1">
+                    <label class="form-check-label" for="sideEffectNausea1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="nausea" type="radio" id="sideEffectNausea2" value="option2">
+                    <label class="form-check-label" for="sideEffectNausea2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="nausea" type="radio" id="sideEffectNausea3" value="option3">
+                    <label class="form-check-label" for="sideEffectNausea3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="nausea" type="radio" id="sideEffectNausea4" value="option4">
+                    <label class="form-check-label" for="sideEffectNausea4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="nausea" type="radio" id="sideEffectNausea5" value="option5">
+                    <label class="form-check-label" for="sideEffectNausea5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Fourth Side Effect Questionnaire Button Group (Stomach Pain)-->
+            <div class="col-3">
+                <p>Stomach Pain:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="pain" type="radio" id="sideEffectPain1" value="option1">
+                    <label class="form-check-label" for="sideEffectPain1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="pain" type="radio" id="sideEffectPain2" value="option2">
+                    <label class="form-check-label" for="sideEffectPain2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="pain" type="radio" id="sideEffectPain3" value="option3">
+                    <label class="form-check-label" for="sideEffectPain3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="pain" type="radio" id="sideEffectPain4" value="option4">
+                    <label class="form-check-label" for="sideEffectPain4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="pain" type="radio" id="sideEffectPain5" value="option5">
+                    <label class="form-check-label" for="sideEffectPain5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Fifth Side Effect Questionnaire Button Group (Dizziness)-->
+            <div class="col-3">
+                <p>Dizziness:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="dizziness" type="radio" id="sideEffectDizziness1" value="option1">
+                    <label class="form-check-label" for="sideEffectDizziness1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="dizziness" type="radio" id="sideEffectDizziness2" value="option2">
+                    <label class="form-check-label" for="sideEffectDizziness2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="dizziness" type="radio" id="sideEffectDizziness3" value="option3">
+                    <label class="form-check-label" for="sideEffectDizziness3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="dizziness" type="radio" id="sideEffectDizziness4" value="option4">
+                    <label class="form-check-label" for="sideEffectDizziness4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="dizziness" type="radio" id="sideEffectDizziness5" value="option5">
+                    <label class="form-check-label" for="sideEffectDizziness5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Sixth Side Effect Questionnaire Button Group (Headache)-->
+            <div class="col-3">
+                <p>Headache:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="headache" type="radio" id="sideEffectHeadache1" value="option1">
+                    <label class="form-check-label" for="sideEffectHeadache1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="headache" type="radio" id="sideEffectHeadache2" value="option2">
+                    <label class="form-check-label" for="sideEffectHeadache2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="headache" type="radio" id="sideEffectHeadache3" value="option3">
+                    <label class="form-check-label" for="sideEffectHeadache3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="headache" type="radio" id="sideEffectHeadache4" value="option4">
+                    <label class="form-check-label" for="sideEffectHeadache4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="headache" type="radio" id="sideEffectHeadache5" value="option5">
+                    <label class="form-check-label" for="sideEffectHeadache5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Seventh Side Effect Questionnaire Button Group (Nervousness)-->
+            <div class="col-3">
+                <p>Nervousness:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="nervousness" type="radio" id="sideEffectNervousness1" value="option1">
+                    <label class="form-check-label" for="sideEffectNervousness1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="nervousness" type="radio" id="sideEffectNervousness2" value="option2">
+                    <label class="form-check-label" for="sideEffectNervousness2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="nervousness" type="radio" id="sideEffectNervousness3" value="option3">
+                    <label class="form-check-label" for="sideEffectNervousness3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="nervousness" type="radio" id="sideEffectNervousness4" value="option4">
+                    <label class="form-check-label" for="sideEffectNervousness4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="nervousness" type="radio" id="sideEffectNervousness5" value="option5">
+                    <label class="form-check-label" for="sideEffectNervousness5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Eighth Side Effect Questionnaire Button Group (Insomnia)-->
+            <div class="col-3">
+                <p>Insomnia:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="insomnia" type="radio" id="sideEffectInsomnia1" value="option1">
+                    <label class="form-check-label" for="sideEffectInsomnia1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="insomnia" type="radio" id="sideEffectInsomnia2" value="option2">
+                    <label class="form-check-label" for="sideEffectInsomnia2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="insomnia" type="radio" id="sideEffectInsomnia3" value="option3">
+                    <label class="form-check-label" for="sideEffectInsomnia3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="insomnia" type="radio" id="sideEffectInsomnia4" value="option4">
+                    <label class="form-check-label" for="sideEffectInsomnia4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="insomnia" type="radio" id="sideEffectInsomnia5" value="option5">
+                    <label class="form-check-label" for="sideEffectInsomnia5">5</label>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--Ninth Side Effect Questionnaire Button Group (Heartrate)-->
+            <div class="col-3">
+                <p>Racing/irregular Heartrate:</p>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="heart" type="radio" id="sideEffectHeart1" value="option1">
+                    <label class="form-check-label" for="sideEffectHeart1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="heart" type="radio" id="sideEffectHeart2" value="option2">
+                    <label class="form-check-label" for="sideEffectHeart2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="heart" type="radio" id="sideEffectHeart3" value="option3">
+                    <label class="form-check-label" for="sideEffectHeart3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="heart" type="radio" id="sideEffectHeart4" value="option4">
+                    <label class="form-check-label" for="sideEffectHeart4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="heart" type="radio" id="sideEffectHeart5" value="option5">
+                    <label class="form-check-label" for="sideEffectHeart5">5</label>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div> <!--Closing Container for Side Effect Questions-->
+
+    <div class="container"> <!--Opening Container for Notes-->
+        <div class="row">
+            <div class="col-12">
+                <div class="form form-inline">
+                    <label class="form-label" for="notes" name="notes" id="notes">Notes: </label>
+                    <textarea class="form-control" name="notes" id="notes" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div> <!--Closing Container for Side Effect Questions-->
 
 
         <div class="row">
